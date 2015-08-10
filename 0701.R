@@ -99,3 +99,7 @@ g2 + theme_tufte()
 
 g2 + theme_wsj()
 
+ggplot(data = diamonds) + geom_point(aes(x = carat, y = price, color = color))
+
+g <- ggplot(data = diamonds, aes(x = carat, y = price))
+g + geom_point(aes(color = color))
